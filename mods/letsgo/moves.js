@@ -73,6 +73,7 @@ let BattleMovedex = {
 		desc: "If this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members.",
 		shortDesc: "User switches out.",
 		priority: -6,
+		onTryHit: true,
 		selfSwitch: true,
 	},
 	"veeveevolley": {
