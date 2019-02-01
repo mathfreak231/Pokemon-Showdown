@@ -10,7 +10,7 @@ exports.BattleAbilities = {
 			let possibleTargets = [];
 			for (let i = 0; i < pokemon.side.foe.active.length; i++) {
 				let target = pokemon.side.foe.active[i];
-				if (target && !target.fainted) {
+				if (target && target.innates && !target.fainted) {
 					possibleInnates = possibleInnates.concat(target.innates);
 					possibleTargets = possibleTargets.concat(target.innates.map(innate => target));
 				}
